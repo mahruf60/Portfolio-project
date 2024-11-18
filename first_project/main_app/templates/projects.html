@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- Projects Section-->
+<section class="py-5">
+    <div class="container px-5 mb-5">
+        <div class="text-center mb-5">
+            <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-11 col-xl-9 col-xxl-8">
+                <!-- Project Card 1-->
+                <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                    <div class="card-body p-0">
+                        <div class="d-flex align-items-center">
+                            <div class="p-5">
+                                <h2 class="fw-bolder">E Commerce Project</h2>
+                                <p>Molla is a responsive, user-friendly eCommerce web application built with Bootstrap. This project is designed to simulate a fully functional online store interface with a focus on aesthetics, usability, and product organization. It includes features commonly seen in online shopping websites, making it suitable for showcasing products across various categories.</p>
+                            </div>
+                            <img class="img-fluid" height="350" width="450" src="{% static 'assets/1.png' %}" alt="..." />
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2-->
+                <div class="card overflow-hidden shadow rounded-4 border-0">
+                    <div class="card-body p-0">
+                        <div class="d-flex align-items-center">
+                            <div class="p-5">
+                                <h2 class="fw-bolder">My Portfolio Project</h2>
+                                <p>Hello! I’m Mahruful Alam, a passionate web developer with a focus on building dynamic, responsive websites using Django and other modern web technologies. I specialize in creating user-friendly, visually appealing websites that help businesses and individuals establish a strong online presence. Whether you're looking to start from scratch or enhance an existing site, I’m here to bring your vision to life. Let’s work together to get your website online and grow fast!</p>
+                            </div>
+                            <img class="img-fluid" height="350" width="450" src="{% static 'assets/4.png' %}" alt="..." />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Call to action section-->
+<section class="py-5 bg-gradient-primary-to-secondary text-white">
+    <div class="container px-5 my-5">
+        <div class="text-center">
+            <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+            <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="{% url 'contact_page' %}">Contact me</a>
+        </div>
+    </div>
+</section>
+{% endblock content %}
